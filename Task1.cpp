@@ -1,3 +1,2 @@
-//
-// Created by vovas on 18.10.2025.
-//
+#include <stdio.h>
+#include <stdlib.h>
