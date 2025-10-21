@@ -20,14 +20,15 @@ int main() {
     cout << "Введіть кут:";
     cin >> deg;
 
+    if (a<=0 || b <= 0 || deg <= 0) {
+        cout << " Неможливо обрахувати площу!";
+        return 1;
+    }
+
     float maxSide = max(a,b);
     float minSide = min(a,b);
     h = ((maxSide - minSide)/2)*tan((deg)*(M_PI/180));
     square=((a+b)/2) * h;
-
-    if (a<=0, b <= 0) {
-        square = 0;
-    }
 
     std::cout << "Площа:"<<square;
 
