@@ -20,7 +20,12 @@ int main() {
     cout<<"Введіть k-днів: ";
     cin >> k_days;
 
-    current_day_name = to;
+    current_day_name = tolower(current_day_name[0]);
+    if (day_to_int.count(current_day_name) <= 0 ) {
+        cout << "Не правильно написаний день тижня";
+        return k_days;
+    }
+
     int current_day_index = day_to_int[current_day_name];
     int new_day_index = (current_day_index + k_days) % 7;
     string new_day_name;
