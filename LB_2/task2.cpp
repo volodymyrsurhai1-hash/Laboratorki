@@ -15,12 +15,20 @@ int main() {
 
     int r1 = 5;
     int r2 = 7;
+
     for (int i = 1; i <= 10; i++)
     {
+        cout << "\n--- Постріл " << i << " ---\n";
         cout<<"Введіть значення х:";
-        cin>>x;
+        if (!(cin>>x)){
+            cout<<"Неправильні вхідні дані!";
+            return 1;
+        }
         cout<<"Введіть значення y:";
-        cin>>y;
+        if (!(cin>>y)){
+            cout<<"Неправильні вхідні дані!";
+            return 1;
+        }
 
         d = sqrt(pow(x,2)+pow(y,2));
 
@@ -32,8 +40,9 @@ int main() {
                 cout<<"Мимо!"<<endl;
             }
         }
-        else if (x>=0 && y<=0) {
-            if (d>r2 && d<10) {
+
+        if (x>=0 && y<=0) {
+            if (d>r1 && d<r2) {
                 cout<<"Влучання!"<<endl;
             }
             else {
