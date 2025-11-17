@@ -35,23 +35,25 @@ int main() {
         if (x<=0 && y>=0) {
             if (d<r1) {
                 cout<<"Влучання!"<<endl;
+                continue;
             }
-            else {
-                cout<<"Мимо!"<<endl;
-            }
+
+            cout<<"Мимо!"<<endl;
+            continue;
         }
 
         if (x>=0 && y<=0) {
-            if (d>r1 && d<r2) {
+            if (d>=r1 && d<=r2) {
                 cout<<"Влучання!"<<endl;
+                continue;
             }
-            else {
-                cout<<"Мимо!"<<endl;
-            }
-        }
-        else {
+
             cout<<"Мимо!"<<endl;
+            continue;
         }
+
+        cout<<"Мимо!"<<endl;
+
     }
 
 }
