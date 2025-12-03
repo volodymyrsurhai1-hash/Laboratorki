@@ -64,7 +64,7 @@ int main() {
     }
 
     cout<<"Відсортований масив: ";
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len; ++i) {
         cout<<arr[i]<<" ";
     }
     return 0;

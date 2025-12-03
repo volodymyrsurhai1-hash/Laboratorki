@@ -25,9 +25,6 @@ int main() {
         return 1;
     }
 
-
-
-
     int arr[a][b];
     cout << "\n--- Заповнення матриці ---\n";
     for (int i = 0; i < a; i++) {
